@@ -1,0 +1,31 @@
+[alias]
+    s = status -s
+
+[apply]
+    whitespace = warn
+
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+
+[difftool]
+    renames = copies
+
+[help]
+    autocorrect = 1
+
+[mergetool]
+    keepBackup = false
+
+[push]
+    default = current
+
+[user]
+    name = Rónán O'Neill
+    email = ronan@adverts.ie
