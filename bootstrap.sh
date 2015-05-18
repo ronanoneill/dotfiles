@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Stripped down version of Zach Holman's:
+# Stripped down version of Zach Holman's symlink approach:
 # https://github.com/holman/dotfiles/blob/master/script/bootstrap
 
 success () {
@@ -23,7 +23,7 @@ link_file () {
             skip=true;
         else
             user "File already exists: $dst ($(basename "$src")), what do you want to do?\n\
-            [s]kip, [o]verwrite, [b]ackup?"
+            [s]kip, [o]verwrite?"
             read -n 1 action
             case "$action" in
                 s )
@@ -31,9 +31,6 @@ link_file () {
                 o )
                     rm -rf "$dst"
                     success "removed $dst";;
-                b )
-                    mv "$dst" "${dst}.backup"
-                    success "moved $dst to ${dst}.backup";;
                 * )
                 ;;
             esac
