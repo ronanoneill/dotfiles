@@ -46,7 +46,7 @@ link_file () {
     fi
 }
 
-dotfilesroot=$(pwd)
+dotfilesroot="$(pwd)/dotfiles"
 for src in $(find -H "$dotfilesroot" -maxdepth 1 -name '*.symlink')
 do
     dst="$HOME/.$(basename "${src%.*}")"
