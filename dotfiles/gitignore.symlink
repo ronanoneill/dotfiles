@@ -1,8 +1,19 @@
+# Misc
 .DS_Store
 *~
 *.swp
 ._*
 Thumbs.db
+
+# External
 .Spotlight-V100
 .Trashes
+
+# Compiled Python Files
 *.pyc
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
