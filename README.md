@@ -15,5 +15,5 @@ cd ~/.dotfiles
 ./bootstrap.sh
 ```
 
-Will create symlinks for the files with the `.symlink` extension in `.dotfiles` to your home
-directory. All files are then managed from within `~/.dotfiles`.
+Will create symlinks for all files with the `.symlink` extension in `.dotfiles/dotfiles` to the home
+directory. Idea is to the manage all files from within `~/.dotfiles`.
